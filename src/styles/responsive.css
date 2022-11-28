@@ -1,0 +1,110 @@
+@media screen and (max-width: 549px) {
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        transition: transform 0.3s ease;
+        text-align: left;
+    }
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    nav a {
+        color: black;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .off-canvas {
+        display: none;
+    }
+    nav a {
+        font-size: 18px;
+    }
+    .wrapper {
+        margin-right: 20px;
+        margin-left: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .content-rating {
+        font-size: 22px;
+    }
+    .content-location {
+        font-size: 22px;
+    }
+    .content-title {
+        font-size: 27px;
+    }
+    .content-description {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .btn:link,
+    .btn:visited,
+    input[type=submit] {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #drawer {
+        position: relative;
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header-hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/public/images/heros/hero-min.jpg');
+       
+    }
+
+}
+/* responsive main */
+@media screen and (min-width: 650px) {
+	.list_item_content {
+		padding: 16px 32px 32px 32px
+	}
+	.list_item_title {
+		font-size: 18px
+	}
+	.list_item_desc {
+		font-size: 14px
+	}
+}
+@media screen and (min-width: 700px) {
+	.list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 16px
+	}
+}
+@media screen and (min-width: 900px) {
+	.list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr
+	}
+}
+@media screen and (min-width: 1200px) {
+	main {
+		max-width: 1200px
+	}
+}
